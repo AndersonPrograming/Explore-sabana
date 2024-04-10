@@ -1,4 +1,8 @@
 ---
+import Card from "../components/Card.astro";
+import Container from "../components/Container.astro";
+import Noticias from "../components/Noticias.astro";
+import NoticiasMain from "../components/NoticiasMain.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -7,4 +11,67 @@ import Layout from "../layouts/Layout.astro";
 		src="././public/home.svg"
 		class="absolulte m-0 t-0 h-100vh bg-cover bg-center h-full w-full"
 	/>
+	<h2
+		class="absolute flex items-center justify-end top-36 text-white px-20 text-5xl w-full h-full bg-white bg-opacity-20 py-10 rounded-full left-[-500px] italic"
+	>
+		<span class="w-[900px]"></span>
+		Explora la sabana centro donde la emoción y la naturaleza se encuentran
+	</h2>
+	<main>
+		<div class="grid w-[70%] grid-cols-3 mx-auto gap-4 my-10">
+			<Card
+				imagen="././public/senderismo.svg"
+				name="Senderismo"
+				url="/senderismo-home"
+			/>
+			<Card
+				imagen="././public/ciclismo.svg"
+				name="Ciclismo"
+				url="/ciclismo-home"
+			/>
+			<Card
+				imagen="././public/camping.svg"
+				name="Camping"
+				url="/camping-home"
+			/>
+		</div>
+		<Container>
+			<h2 class="text-center">Noticias</h2>
+			<div class="flex justify-center gap-10">
+				<div>
+					<NoticiasMain
+						imagen="././public/senderismo.svg"
+						titulo="Nueva ruta de senderismo"
+						descripcion="Descubre la nueva ruta de senderismo en la sabana centro"
+						url="/noticias/nueva-ruta-senderismo"
+					/>
+				</div>
+				<div class="flex flex-col justify-between">
+					<Noticias
+						imagen="././public/senderismo.svg"
+						titulo="Nueva ruta de senderismo"
+						descripcion="Descubre la nueva ruta de senderismo en la sabana centro"
+						url="/noticias/nueva-ruta-senderismo"
+					/>
+					<Noticias
+						imagen="././public/senderismo.svg"
+						titulo="Nueva ruta de senderismo"
+						descripcion="Descubre la nueva ruta de senderismo en la sabana centro"
+						url="/noticias/nueva-ruta-senderismo"
+					/>
+					<Noticias
+						imagen="././public/senderismo.svg"
+						titulo="Nueva ruta de senderismo"
+						descripcion="Descubre la nueva ruta de senderismo en la sabana centro"
+						url="/noticias/nueva-ruta-senderismo"
+					/>
+				</div>
+			</div>
+		</Container>
+	</main>
 </Layout>
+<style>
+	h2 {
+		clip-path: ellipse(50% 40% at 50% 56%);
+	}
+</style>
