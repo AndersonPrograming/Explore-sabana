@@ -1,0 +1,17 @@
+---
+const { color } = Astro.props;
+---
+
+<header
+     class=` absolute flex justify-between w-full h-[80px] bg-[${Astro.props.color}] items-center px-10 text-white`
+>
+     <h1>Explore Sabana</h1>
+     <nav>
+          <ul class="flex gap-4">
+               <li><a href="/index">Home</a></li>
+               <li><a href="/actiividades">Actividades</a></li>
+               <li><a href="/acerca-de">Acerca de Nosotros</a></li>
+               <li><a href="/contacto">Ccontacto</a></li>
+          </ul>
+     </nav>
+</header>
