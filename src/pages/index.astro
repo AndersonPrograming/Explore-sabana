@@ -11,7 +11,7 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Explore sabana">
 	<Header clase="absolute" />
 	<img
-		src="././public/home.svg"
+		src="/home.svg"
 		loading="lazy"
 		class="absolulte m-0 t-0 h-100vh bg-cover bg-center h-full w-full"
 	/>
@@ -27,20 +27,16 @@ import Layout from "../layouts/Layout.astro";
 			class="grid w-[70%] grid-cols-3 mx-auto gap-4 my-10"
 		>
 			<Card
-				imagen="././public/senderismo.svg"
+				imagen="/senderismo.svg"
 				name="Senderismo"
 				url="/senderismo-home"
 			/>
 			<Card
-				imagen="././public/ciclismo.svg"
+				imagen="/ciclismo.svg"
 				name="Ciclismo"
 				url="/ciclismo-home"
 			/>
-			<Card
-				imagen="././public/camping.svg"
-				name="Camping"
-				url="/camping-home"
-			/>
+			<Card imagen="/camping.svg" name="Camping" url="/camping-home" />
 		</div>
 		<Container>
 			<h2 id="noticias" class="text-center text-2xl my-10">
@@ -49,7 +45,7 @@ import Layout from "../layouts/Layout.astro";
 			<div class="flex justify-center gap-10">
 				<div>
 					<NoticiasMain
-						imagen="././public/noticia1.svg"
+						imagen="/noticia1.svg"
 						titulo="Ciclo paseó dominical en Zipaquirá: Un evento gratuito para disfrutar en familia"
 						descripcion="El Instituto Municipal para la Cultura, la Recreación y el Deporte de Zipaquirá (IMCRDZ) organizó un “Ciclopaseo Dominical” completamente gratuito para los amantes de la bicicleta y la naturaleza. El evento se llevará a cabo el próximo domingo, 01 de octubre de 2023, a partir de las 07:00 a. m., en la ‘Capital Salinera de Colombia’"
 						url="https://extrategiamedios.com/ciclopaseo-dominical-en-zipaquira-un-paseo-gratuito-para-disfrutar-en-familia/"
@@ -57,13 +53,13 @@ import Layout from "../layouts/Layout.astro";
 				</div>
 				<div class="flex flex-col justify-between">
 					<Noticias
-						imagen="././public/noticia2.svg"
+						imagen="/noticia2.svg"
 						titulo="Consejos de Seguridad"
 						descripcion="Colombia es sin duda un país de montañas con pisos térmicos muy variados, paisajes maravillosos, variedad de fauna y flora, Colombia es sin duda un país de montañas con pisos térmicos muy variados, paisajesgente campesina muy acogedora, cultura ancestral. "
 						url="https://laislaoeste.com/11-medidas-preventivas-para-disfrutar-actividades-al-aire-libre/"
 					/>
 					<Noticias
-						imagen="././public/noticia3.svg"
+						imagen="/noticia3.svg"
 						titulo="Avistamiento de aves  en Cogua"
 						descripcion='a Administración Municipal de Cogua invita a la comunidad a "Pajarear" una manera de descubrir otra oportunidad de explorar sus riquezas ambientales, el próximo 8 de mayo se celebrará en este municipio el Global Big Day Colombia.'
 						url="https://www.cogua-cundinamarca.gov.co/noticias/asi-se--vivio-el-avistamiento-de-aves"
