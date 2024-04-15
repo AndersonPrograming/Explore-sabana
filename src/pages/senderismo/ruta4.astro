@@ -1,0 +1,39 @@
+---
+import Container from "../../components/Container.astro";
+import FotosRuta from "../../components/FotosRuta.astro";
+import Header from "../../components/Header.astro";
+import Ruta from "../../components/Ruta.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Senderismo ruta 1">
+     <Header clase="bg-green-700" />
+     <Container>
+          <h1 class="text-4xl font-bold text-center mt-10 text-neutral-500">
+               Cerro El Púlpito, Cogua
+          </h1>
+
+          <Ruta
+               url="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d31048.037677118624!2d-74.01182535199146!3d5.079615573414195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x8e406fbd71348207%3A0x787dcd3bd772ad9!2sCerro%20el%20P%C3%BAlpito%2C%20Cogua%2C%20Cundinamarca!3m2!1d5.098041299999999!2d-74.0060434!4m5!1s0x8e406e54730190bb%3A0x36f6c0cc1783f126!2sCogua%2C%20Cundinamarca!3m2!1d5.061241!2d-73.97640799999999!5e1!3m2!1ses-419!2sco!4v1713140709941!5m2!1ses-419!2sco"
+               distancia="7.86 km"
+               dificultad="Moderada"
+               altitudMaxima="2.996 m"
+               altitudMinima="2.569 m"
+               duracionTotal="4 h 58 min"
+               desivelPositivo="496 m"
+               desivelNegativo="494 m"
+          />
+          <FotosRuta
+               foto1="../public/fruta1.svg"
+               foto2="../public/fruta2.svg"
+               foto3="../public/fruta3.svg"
+               ruta1="Peña de Juica, Tabio – Tenjo"
+               url1="ruta2"
+               ruta2="Páramo de Guerrero, Zipaquirá"
+               url2="ruta3"
+               ruta3="Serranía del Majuy, Chía – Cota"
+               url3="ruta1"
+               logo="../public/sendeImg.svg"
+          />
+     </Container>
+</Layout>

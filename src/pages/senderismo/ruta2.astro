@@ -1,0 +1,39 @@
+---
+import Container from "../../components/Container.astro";
+import FotosRuta from "../../components/FotosRuta.astro";
+import Header from "../../components/Header.astro";
+import Ruta from "../../components/Ruta.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Senderismo ruta 1">
+     <Header clase="bg-green-700" />
+     <Container>
+          <h1 class="text-4xl font-bold text-center mt-10 text-neutral-500">
+               Peña de Juica, Tabio – Tenjo
+          </h1>
+
+          <Ruta
+               url="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d62113.55905763085!2d-74.16226735126328!3d4.894774740686936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e2!4m5!1s0x8e407f5e90ebf197%3A0x8700278ba6062aea!2sTenjo%2C%20Cundinamarca%2C%20Colombia!3m2!1d4.872476!2d-74.14576989999999!4m5!1s0x8e4079183fa5cb65%3A0x20097a44cc3abaea!2sTabio%2C%20Cundinamarca%2C%20Colombia!3m2!1d4.916962!2d-74.096358!4m5!1s0x8e407f79630bfac9%3A0x4ebec77e0a0eb70!2sPe%C3%B1a%20de%20Juaica%2C%20Km%207%20via%20tenjo%2C%20Tabio%2C%20Cundinamarca%2C%20Colombia!3m2!1d4.9047826!2d-74.127136!5e1!3m2!1ses-419!2sus!4v1713139554534!5m2!1ses-419!2sus"
+               distancia="7.86 km"
+               dificultad="Moderada"
+               altitudMaxima="2.996 m"
+               altitudMinima="2.569 m"
+               duracionTotal="4 h 58 min"
+               desivelPositivo="496 m"
+               desivelNegativo="494 m"
+          />
+          <FotosRuta
+               foto1="../public/fruta1.svg"
+               foto2="../public/fruta2.svg"
+               foto3="../public/fruta3.svg"
+               ruta1="Serranía del Majuy, Chía – Cota"
+               url1="ruta1"
+               ruta2="Páramo de Guerrero, Zipaquirá"
+               url2="ruta3"
+               ruta3="Cerro El Púlpito, Cogua"
+               url3="ruta4"
+               logo="../public/sendeImg.svg"
+          />
+     </Container>
+</Layout>

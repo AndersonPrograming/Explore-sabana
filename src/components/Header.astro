@@ -1,17 +1,57 @@
 ---
-const { color } = Astro.props;
+const { clase } = Astro.props;
 ---
 
 <header
-     class=` absolute flex justify-between w-full h-[80px] bg-[${Astro.props.color}] items-center px-10 text-white`
+     class=`flex justify-between w-full h-[80px] ${clase} items-center px-10 text-white`
 >
-     <h1>Explore Sabana</h1>
+     <h1 class="text-2xl">Explore Sabana</h1>
      <nav>
           <ul class="flex gap-4">
-               <li><a href="/index">Home</a></li>
-               <li><a href="/actiividades">Actividades</a></li>
-               <li><a href="/acerca-de">Acerca de Nosotros</a></li>
-               <li><a href="/contacto">Contacto</a></li>
+               <li><a href="/">Home</a></li>
+               <li class="relative">
+                    <a href="/#actividades" class="flex items-center">
+                         Actividades
+                    </a>
+                    <!-- Menú desplegable -->
+                    <div
+                         class="absolute hidden bg-white rounded-md shadow-lg z-10"
+                    >
+                         <ul class="py-1">
+                              <li>
+                                   <a
+                                        href="/senderismo-home"
+                                        class="block px-4 py-2 text-sm text-green-700 hover:bg-gray-100"
+                                        >Senderismo</a
+                                   >
+                              </li>
+                              <li>
+                                   <a
+                                        href="/ciclismo-home"
+                                        class="block px-4 py-2 text-sm text-green-700 hover:bg-gray-100"
+                                        >Ciclismo</a
+                                   >
+                              </li>
+                              <li>
+                                   <a
+                                        href="/camping-home"
+                                        class="block px-4 py-2 text-sm text-green-700 hover:bg-gray-100"
+                                        >Camping</a
+                                   >
+                              </li>
+                              <!-- Agrega más enlaces según tus necesidades -->
+                         </ul>
+                    </div>
+               </li>
+               <li><a href="/#noticias">Noticias</a></li>
+               <li><a href="#contacto">Contacto</a></li>
           </ul>
      </nav>
 </header>
+
+<style>
+     /* Mostrar el menú desplegable al pasar el ratón sobre el enlace "Actividades" */
+     .relative:hover .absolute {
+          display: block;
+     }
+</style>

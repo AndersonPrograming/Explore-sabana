@@ -1,0 +1,36 @@
+---
+import Whatsapp from "./Whatsapp.astro";
+import Insta from "./Insta.astro";
+import Facebook from "./Facebook.astro";
+---
+
+<footer id="contacto" class="pt-40">
+     <div
+          class="flex justify-between w-full h-40 bg-green-700 items-center px-10 text-white"
+     >
+          <div class="text-xs">
+               <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#actividades">Actividades</a></li>
+                    <li><a href="/#noticias">Noticias</a></li>
+                    <li>
+                         <a href="#"
+                              >Información Legal | Política y Privacidad
+                         </a>
+                    </li>
+               </ul>
+          </div>
+          <div>
+               <ul class="flex gap-4 text-white">
+                    <li>
+                         <Whatsapp />
+                    </li>
+                    <li><Insta /></li>
+                    <li><Facebook /></li>
+               </ul>
+          </div>
+     </div>
+     <div class="text-xs bg-green-700 text-center text-white py-2">
+          <p>© copyright 2024, Explore sabana Inc.</p>
+     </div>
+</footer>

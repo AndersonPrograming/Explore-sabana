@@ -1,14 +1,18 @@
 ---
 import Card from "../components/Card.astro";
 import Container from "../components/Container.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 import Noticias from "../components/Noticias.astro";
 import NoticiasMain from "../components/NoticiasMain.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Explore sabana">
+	<Header clase="absolute" />
 	<img
 		src="././public/home.svg"
+		loading="lazy"
 		class="absolulte m-0 t-0 h-100vh bg-cover bg-center h-full w-full"
 	/>
 	<h2
@@ -18,7 +22,10 @@ import Layout from "../layouts/Layout.astro";
 		Explora la sabana centro donde la emoción y la naturaleza se encuentran
 	</h2>
 	<main>
-		<div class="grid w-[70%] grid-cols-3 mx-auto gap-4 my-10">
+		<div
+			id="actividades"
+			class="grid w-[70%] grid-cols-3 mx-auto gap-4 my-10"
+		>
 			<Card
 				imagen="././public/senderismo.svg"
 				name="Senderismo"
@@ -36,27 +43,29 @@ import Layout from "../layouts/Layout.astro";
 			/>
 		</div>
 		<Container>
-			<h2 class="text-center">Noticias</h2>
+			<h2 id="noticias" class="text-center text-2xl my-10">
+				Noticias
+			</h2>
 			<div class="flex justify-center gap-10">
 				<div>
 					<NoticiasMain
 						imagen="././public/noticia1.svg"
 						titulo="Ciclo paseó dominical en Zipaquirá: Un evento gratuito para disfrutar en familia"
-						descripcion="El IMCRDZ invita a explorar la belleza de la ‘Capital Salinera de Colombia’, en bicicleta"
+						descripcion="El Instituto Municipal para la Cultura, la Recreación y el Deporte de Zipaquirá (IMCRDZ) organizó un “Ciclopaseo Dominical” completamente gratuito para los amantes de la bicicleta y la naturaleza. El evento se llevará a cabo el próximo domingo, 01 de octubre de 2023, a partir de las 07:00 a. m., en la ‘Capital Salinera de Colombia’"
 						url="https://extrategiamedios.com/ciclopaseo-dominical-en-zipaquira-un-paseo-gratuito-para-disfrutar-en-familia/"
 					/>
 				</div>
 				<div class="flex flex-col justify-between">
 					<Noticias
-						imagen="././public/senderismo.svg"
-						titulo="Ciclo paseó dominical en Zipaquirá: Un evento gratuito para disfrutar en familia"
-						descripcion="El IMCRDZ invita a explorar la belleza de la ‘Capital Salinera de Colombia’, en bicicleta"
-						url=""
+						imagen="././public/noticia2.svg"
+						titulo="Consejos de Seguridad"
+						descripcion="Colombia es sin duda un país de montañas con pisos térmicos muy variados, paisajes maravillosos, variedad de fauna y flora, Colombia es sin duda un país de montañas con pisos térmicos muy variados, paisajesgente campesina muy acogedora, cultura ancestral. "
+						url="https://laislaoeste.com/11-medidas-preventivas-para-disfrutar-actividades-al-aire-libre/"
 					/>
 					<Noticias
 						imagen="././public/noticia3.svg"
 						titulo="Avistamiento de aves  en Cogua"
-						descripcion="Descubre la nueva ruta de senderismo en la sabana centro"
+						descripcion='a Administración Municipal de Cogua invita a la comunidad a "Pajarear" una manera de descubrir otra oportunidad de explorar sus riquezas ambientales, el próximo 8 de mayo se celebrará en este municipio el Global Big Day Colombia.'
 						url="https://www.cogua-cundinamarca.gov.co/noticias/asi-se--vivio-el-avistamiento-de-aves"
 					/>
 				</div>

@@ -1,0 +1,42 @@
+---
+import OtraRuta from "./OtraRuta.astro";
+const { foto1, foto2, foto3, ruta1, url1, ruta2, url2, ruta3, url3, logo } =
+     Astro.props;
+---
+
+<section class="flex justify-between pt-6 text-2xl">
+     <div>
+          <h1 class="uppercase text-center text-neutral-500 mb-4">
+               Fotos de la ruta
+          </h1>
+          <div class="flex h-[300px] gap-2 items-center">
+               <img
+                    src={foto1}
+                    alt="foto de la ruta"
+                    class="size-full rounded-lg"
+               />
+               <div class="flex flex-col gap-2 justify-between">
+                    <img
+                         src={foto2}
+                         alt="foto de la ruta"
+                         class="size-full rounded-lg"
+                    />
+                    <img
+                         src={foto3}
+                         alt="foto de la ruta"
+                         class="size-full rounded-lg"
+                    />
+               </div>
+          </div>
+     </div>
+     <div>
+          <h1 class="uppercase text-center text-neutral-500">otras rutas</h1>
+          <div>
+               <OtraRuta title={ruta1} url={url1} logo={logo} />
+
+               <OtraRuta title={ruta2} url={url2} logo={logo} />
+
+               <OtraRuta title={ruta3} url={url3} logo={logo} />
+          </div>
+     </div>
+</section>

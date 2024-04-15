@@ -1,0 +1,32 @@
+---
+import Hero from "../components/Hero.astro";
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Container from "../components/Container.astro";
+import CardRuta from "../components/CardRuta.astro";
+---
+
+<Layout title="Camping Home">
+     <Header clase="bg-green-700" />
+     <Container>
+          <Hero
+               title="Camping"
+               parrafo="los parques naturales que protegen la biodiversidad única de nuestro país, los rincones entre montañas que resguardan los bosques o la caída de agua más alta de Colombia, son algunas opciones que hacen de Cundinamarca un departamento ideal para acampar y compartir con la pareja, familia o amigos."
+          />
+          <h3 class="uppercase my-10">Conoce nuestros lugares</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9">
+               <CardRuta
+                    img="././public/cam1.svg"
+                    logo="././public/campImg.svg"
+                    ruta="Embalse del Neusa"
+                    url="/ruta1"
+               />
+               <CardRuta
+                    logo="././public/campImg.svg"
+                    img="././public/cam2.svg"
+                    ruta="Reserva El Bosque"
+                    url="/ruta1"
+               />
+          </div>
+     </Container>
+</Layout>

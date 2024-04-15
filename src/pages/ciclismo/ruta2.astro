@@ -1,0 +1,38 @@
+---
+import CiclismoRuta from "../../components/CiclismoRuta.astro";
+import Container from "../../components/Container.astro";
+import FotosRuta from "../../components/FotosRuta.astro";
+import Header from "../../components/Header.astro";
+import Ruta from "../../components/Ruta.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Senderismo ruta 1">
+     <Header clase="bg-green-700" />
+     <Container>
+          <h1 class="text-4xl font-bold text-center mt-10 text-neutral-500">
+               Zipaquirá – Cogua – Cerro ‘El Pulpito – Cogua – Zipaquirá
+          </h1>
+
+          <Ruta
+               url="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d62097.98469110141!2d-74.02993082929866!3d5.059757348673902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e2!4m5!1s0x8e406fdf15000d3b%3A0x3ab218bb9961424e!2sZipaquir%C3%A1%2C%20Cundinamarca!3m2!1d5.021476!2d-73.990955!4m5!1s0x8e406e54730190bb%3A0x36f6c0cc1783f126!2sCogua%2C%20Cundinamarca!3m2!1d5.061241!2d-73.97640799999999!4m5!1s0x8e406fbd71348207%3A0x787dcd3bd772ad9!2sCerro%20el%20P%C3%BAlpito%2C%20Cogua%2C%20Cundinamarca!3m2!1d5.098041299999999!2d-74.0060434!4m5!1s0x8e406e54730190bb%3A0x36f6c0cc1783f126!2sCogua%2C%20Cundinamarca!3m2!1d5.061241!2d-73.97640799999999!4m5!1s0x8e406fdf15000d3b%3A0x3ab218bb9961424e!2sZipaquir%C3%A1%2C%20Cundinamarca!3m2!1d5.021476!2d-73.990955!5e1!3m2!1ses-419!2sco!4v1713142374992!5m2!1ses-419!2sco"
+               distancia="7.86 km"
+               dificultad="Moderada"
+               altitudMaxima="2.996 m"
+               altitudMinima="2.569 m"
+               duracionTotal="4 h 58 min"
+               desivelPositivo="496 m"
+               desivelNegativo="494 m"
+          />
+          <CiclismoRuta
+               foto1="../public/fruta1.svg"
+               foto2="../public/fruta2.svg"
+               foto3="../public/fruta3.svg"
+               ruta1="Cota - Chia - Valvanera - Tenjo - Tabio"
+               url1="ruta1"
+               ruta2="Tabio (El Bote) – San Jorge – Zipaquirá"
+               url2="ruta3"
+               logo="../public/cicliImg.svg"
+          />
+     </Container>
+</Layout>

@@ -1,0 +1,52 @@
+---
+const {
+     distancia,
+     dificultad,
+     altitudMaxima,
+     altitudMinima,
+     duracionTotal,
+     desivelPositivo,
+     desivelNegativo,
+     url,
+} = Astro.props;
+---
+
+<section class="flex justify-between items-center w-full pt-6 text-2xl">
+     <div class="">
+          <iframe
+               src={url}
+               width="600"
+               height="450"
+               style="border:0;"
+               allowfullscreen=""
+               loading="lazy"
+               referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+     </div>
+     <div>
+          <h3 class="uppercase text-center text-neutral-500">
+               Estadisticas de la ruta
+          </h3>
+          <div class="flex gap-5">
+               <ul class="p-10">
+                    <li class="font-semibold">Distancia</li>
+                    <li class="text-neutral-500">{distancia}</li>
+                    <li class="font-semibold">Dificultad</li>
+                    <li class="text-neutral-500">{dificultad}</li>
+                    <li class="font-semibold">Altitud Máxima</li>
+                    <li class="text-neutral-500">{altitudMaxima}</li>
+                    <li class="font-semibold">Altitud mínima</li>
+                    <li class="text-neutral-500">{altitudMinima}</li>
+               </ul>
+               <ul class="p-10">
+                    <li class="font-semibold">Duración total</li>
+                    <li class="text-neutral-500">{duracionTotal}</li>
+                    <li class="font-semibold">Desivel Positivo</li>
+                    <li class="text-neutral-500">{desivelPositivo}</li>
+                    <li class="font-semibold">Desivel Negativo</li>
+                    <li class="text-neutral-500">{desivelNegativo}</li>
+               </ul>
+          </div>
+     </div>
+</section>

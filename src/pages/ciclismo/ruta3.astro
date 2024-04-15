@@ -1,0 +1,38 @@
+---
+import CiclismoRuta from "../../components/CiclismoRuta.astro";
+import Container from "../../components/Container.astro";
+import FotosRuta from "../../components/FotosRuta.astro";
+import Header from "../../components/Header.astro";
+import Ruta from "../../components/Ruta.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Senderismo ruta 1">
+     <Header clase="bg-green-700" />
+     <Container>
+          <h1 class="text-4xl font-bold text-center mt-10 text-neutral-500">
+               Tabio (El Bote) – San Jorge – Zipaquirá
+          </h1>
+
+          <Ruta
+               url="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d124208.57710453012!2d-74.055307470869!3d4.993634211734106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e2!4m5!1s0x8e407bac575c250d%3A0x58081c1602c7eb66!2sRestaurante%20El%20BOTE%2C%20Via%20el%20Bote%20-%20La%20Bonanova%2C%20La%20Cabrera%2C%20Tabio%2C%20Cundinamarca!3m2!1d4.974740499999999!2d-74.06873999999999!4m5!1s0x8e40723e46e2fce9%3A0x598c42f1f8734ca8!2sSan%20Jorge%2C%20Tocancip%C3%A1%2C%20Cundinamarca!3m2!1d4.99998!2d-73.9167499!4m5!1s0x8e406fdf15000d3b%3A0x3ab218bb9961424e!2sZipaquir%C3%A1%2C%20Cundinamarca!3m2!1d5.021476!2d-73.990955!5e1!3m2!1ses-419!2sco!4v1713142470793!5m2!1ses-419!2sco"
+               distancia="7.86 km"
+               dificultad="Moderada"
+               altitudMaxima="2.996 m"
+               altitudMinima="2.569 m"
+               duracionTotal="4 h 58 min"
+               desivelPositivo="496 m"
+               desivelNegativo="494 m"
+          />
+          <CiclismoRuta
+               foto1="../public/fruta1.svg"
+               foto2="../public/fruta2.svg"
+               foto3="../public/fruta3.svg"
+               ruta1="Zipaquirá – Cogua – Cerro ‘El Pulpito – Cogua"
+               url1="ruta2"
+               ruta2="Cota - Chia - Valvanera - Tenjo - Tabio"
+               url2="ruta1"
+               logo="../public/cicliImg.svg"
+          />
+     </Container>
+</Layout>

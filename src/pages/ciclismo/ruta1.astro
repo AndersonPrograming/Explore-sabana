@@ -1,0 +1,37 @@
+---
+import CiclismoRuta from "../../components/CiclismoRuta.astro";
+import Container from "../../components/Container.astro";
+import Header from "../../components/Header.astro";
+import Ruta from "../../components/Ruta.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Senderismo ruta 1">
+     <Header clase="bg-green-700" />
+     <Container>
+          <h1 class="text-4xl font-bold text-center mt-10 text-neutral-500">
+               Cota - Chia - Valvanera - Tenjo - Tabio - Cota
+          </h1>
+
+          <Ruta
+               url="https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d62116.457035295105!2d-74.1392490296457!3d4.863459848664013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e2!4m5!1s0x8e3f86e804531fdd%3A0x38359f1d01fd914a!2sCota%2C%20Cundinamarca!3m2!1d4.8098502!2d-74.1018383!4m5!1s0x8e3f878dd475a989%3A0x4211096980b5302!2sCh%C3%ADa%2C%20Cundinamarca!3m2!1d4.864758!2d-74.050918!4m5!1s0x8e3f877f0eeaa865%3A0xae9df1d25c329cdf!2sIglesia%20la%20Valvanera%2C%20V%C3%ADa%20Fonquet%C3%A1%2C%20Ch%C3%ADa%2C%20Cundinamarca!3m2!1d4.8637369999999995!2d-74.0789119!4m5!1s0x8e407f5e90ebf197%3A0x8700278ba6062aea!2sTenjo%2C%20Cundinamarca!3m2!1d4.872476!2d-74.14576989999999!4m5!1s0x8e4079183fa5cb65%3A0x20097a44cc3abaea!2sTabio%2C%20Cundinamarca!3m2!1d4.916962!2d-74.096358!4m5!1s0x8e3f86e804531fdd%3A0x38359f1d01fd914a!2sCota%2C%20Cundinamarca!3m2!1d4.8098502!2d-74.1018383!5e1!3m2!1ses-419!2sco!4v1713141889139!5m2!1ses-419!2sco"
+               distancia="7.86 km"
+               dificultad="Moderada"
+               altitudMaxima="2.996 m"
+               altitudMinima="2.569 m"
+               duracionTotal="4 h 58 min"
+               desivelPositivo="496 m"
+               desivelNegativo="494 m"
+          />
+          <CiclismoRuta
+               foto1="../public/fruta1.svg"
+               foto2="../public/fruta2.svg"
+               foto3="../public/fruta3.svg"
+               ruta1="Zipaquirá – Cogua – Cerro ‘El Pulpito – Cogua"
+               url1="ruta2"
+               ruta2="Tabio (El Bote) – San Jorge – Zipaquirá"
+               url2="ruta3"
+               logo="../public/cicliImg.svg"
+          />
+     </Container>
+</Layout>

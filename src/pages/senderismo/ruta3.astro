@@ -1,0 +1,39 @@
+---
+import Container from "../../components/Container.astro";
+import FotosRuta from "../../components/FotosRuta.astro";
+import Header from "../../components/Header.astro";
+import Ruta from "../../components/Ruta.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Senderismo ruta 1">
+     <Header clase="bg-green-700" />
+     <Container>
+          <h1 class="text-4xl font-bold text-center mt-10 text-neutral-500">
+               Páramo de Guerrero, Zipaquirá
+          </h1>
+
+          <Ruta
+               url="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1982473.9925650407!2d-74.79844646036062!3d6.400704003135817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e4!4m5!1s0x8e406fdf15000d3b%3A0x3ab218bb9961424e!2sZipaquir%C3%A1%2C%20Cundinamarca!3m2!1d5.021476!2d-73.990955!4m5!1s0x8e67b89e4cdc4243%3A0x9c3a9f3db13ecafd!2sP%C3%A1ramo%20De%20Guerrero%2C%20Salazar%2C%20Norte%20de%20Santander!3m2!1d7.7833!2d-72.96665!5e1!3m2!1ses-419!2sco!4v1713140627791!5m2!1ses-419!2sco"
+               distancia="7.86 km"
+               dificultad="Moderada"
+               altitudMaxima="2.996 m"
+               altitudMinima="2.569 m"
+               duracionTotal="4 h 58 min"
+               desivelPositivo="496 m"
+               desivelNegativo="494 m"
+          />
+          <FotosRuta
+               foto1="../public/fruta1.svg"
+               foto2="../public/fruta2.svg"
+               foto3="../public/fruta3.svg"
+               ruta1="Peña de Juica, Tabio – Tenjo"
+               url1="ruta2"
+               ruta2="Serranía del Majuy, Chía – Cota"
+               url2="ruta1"
+               ruta3="Cerro El Púlpito, Cogua"
+               url3="ruta4"
+               logo="../public/sendeImg.svg"
+          />
+     </Container>
+</Layout>

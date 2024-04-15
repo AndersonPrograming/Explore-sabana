@@ -1,0 +1,45 @@
+---
+import Hero from "../components/Hero.astro";
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Container from "../components/Container.astro";
+import CardRuta from "../components/CardRuta.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Senderismo Home">
+     <Header clase="bg-green-700" />
+     <Container>
+          <Hero
+               title="Senderismo"
+               parrafo="El senderismo es una excelente actividad para despejar la mente y disfrutar de los paisajes naturales que ofrece la provincia de Sabana Centro en Cundinamarca."
+          />
+          <h3 class="uppercase my-10">Conoce nuestras rutas</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9">
+               <CardRuta
+                    logo="././public/sendeImg.svg"
+                    img="././public/ruta1.svg"
+                    ruta="Serranía del Majuy, Chía - Cota"
+                    url="/senderismo/ruta1"
+               />
+               <CardRuta
+                    logo="././public/sendeImg.svg"
+                    img="././public/ruta2.svg"
+                    ruta="Peña de Juica, Tabio – Tenjo"
+                    url="/senderismo/ruta2"
+               />
+               <CardRuta
+                    logo="././public/sendeImg.svg"
+                    img="././public/ruta3.svg"
+                    ruta="Páramo de Guerrero, Zipaquirá"
+                    url="/senderismo/ruta3"
+               />
+               <CardRuta
+                    logo="././public/sendeImg.svg"
+                    img="././public/ruta4.svg"
+                    ruta="Cerro El Púlpito, Cogua"
+                    url="/senderismo/ruta4"
+               />
+          </div>
+     </Container>
+</Layout>
