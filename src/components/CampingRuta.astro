@@ -1,0 +1,43 @@
+---
+const {
+     distancia,
+     dificultad,
+     altitudMaxima,
+     altitudMinima,
+     duracionTotal,
+     desivelPositivo,
+     desivelNegativo,
+     img,
+} = Astro.props;
+---
+
+<section class="grid grid-cols-2 items-center w-full pt-6 text-xl">
+     <div class="w-[ px-10">
+          <img src={img} alt="" class="w-full" />
+     </div>
+     <div>
+          <h3 class="uppercase text-center text-neutral-500">
+               Caracteristicas del lugar
+          </h3>
+          <div class="flex flex-col w-full gap-5">
+               <h3 class="font-semibold">Descripcion</h3>
+               <p class="text-neutral-500">
+                    Ubicación: Tausa y Cogua (Cundinamarca) Son 3.700 las
+                    hectáreas de bosque andino para reconectar con la naturaleza
+                    y 900 hectáreas de embalse (donde conviven truchas arcoiris,
+                    capitanes de la sabana y la guapucha) para complacer la
+                    vista. Acampar en este parque es toda una experiencia
+                    sensorial, en la que el olor a pino y el verdeazul del
+                    paisaje imperan.
+               </p>
+               <h3 class="font-semibold">
+                    Entrada al parque: <span class="text-neutral-500"
+                         >$5.000</span
+                    >
+               </h3>
+               <h3 class="font-semibold">
+                    Acampar: <span class="text-neutral-500">$21.500</span>
+               </h3>
+          </div>
+     </div>
+</section>

@@ -1,0 +1,37 @@
+---
+import CampingRuta from "../../components/CampingRuta.astro";
+import Container from "../../components/Container.astro";
+import FotosCamping from "../../components/FotosCamping.astro";
+import FotosRuta from "../../components/FotosRuta.astro";
+import Header from "../../components/Header.astro";
+import Ruta from "../../components/Ruta.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Senderismo ruta 1">
+     <Header clase="bg-green-700" />
+     <Container>
+          <h1 class="text-4xl font-bold text-center mt-10 text-neutral-500">
+               Reserva el Bosque
+          </h1>
+
+          <CampingRuta
+               img="https://img1.wsimg.com/isteam/ip/4e44a71c-6645-45e4-8aea-05bdc4efa8a4/miniatura-el-bosque-2.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1280"
+               distancia="7.86 km"
+               dificultad="Moderada"
+               altitudMaxima="2.996 m"
+               altitudMinima="2.569 m"
+               duracionTotal="4 h 58 min"
+               desivelPositivo="496 m"
+               desivelNegativo="494 m"
+          />
+          <FotosCamping
+               foto1="/fcam1.svg"
+               foto2="/fcam2.svg"
+               foto3="/fcam3.svg"
+               ruta1="Embalce del Neusa"
+               url1="ruta1"
+               logo="/campImg.svg"
+          />
+     </Container>
+</Layout>

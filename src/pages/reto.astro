@@ -1,0 +1,53 @@
+---
+import Container from "../components/Container.astro";
+import Dias from "../components/Dias.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="reto">
+     <Header clase="bg-green-700" />
+     <Container>
+          <Hero
+               title="Plan de fin de semana en la sabana de Bogotá"
+               parrafo="Invitamos a todos los amantes del deporte, la aventura y la naturaleza a participar en esta divertida ruta. Transforma tu fin de semana en una experiencia inolvidable mientras descubres las maravillas de Sabana Centro."
+          />
+          <h3 class="text-center font-semibold py-6 text-2xl">Dia 1</h3>
+          <div class="grid grid-cols-2 gap-4 py-6">
+               <Dias
+                    hora="5:00 a.m. – 11: 00 p.m."
+                    parrafo="Inicia con un recorrido en bicicleta de 105,2 kilómetros por terreno llano, con subidas exigentes a través de la sabana de Bogotá disfrutando de las vistas panorámicas de la sabana. Dura 6horas y de allí se dirigirán en carro hasta el Parque Embalse del Neusa para continuar con la segunda actividad"
+                    img="https://www.travesiasenbicicleta.com/wp-content/uploads/2021/10/Giron2a-e1634494550483.jpg"
+               />
+               <Dias
+                    hora="12:30 p.m. – 2:30 p.m."
+                    parrafo="se establece el campamento base en una zona designada para camping allí podrán almorzar y descansar, disfrutarán de la flora y fauna del lugar"
+                    img="https://campamentos.com.co/wp-content/uploads/2023/03/1.jpg"
+               />
+               <Dias
+                    hora="3:00 p.m. - 9: 00 p.m. "
+                    parrafo="Realiza una caminata de senderismo de 14,89 kilómetros por un sendero que parte del municipio de Cogua en ascenso por la vereda Cascajal hacia el mítico Cerro el Púlpito, cuya cruz metálica resalta desde la distancia. Desde este punto se obtiene unas de las mejores postales del centro de Cundinamarca: Nemocón, Cogua, Zipaquirá, Briceño, Tocancipá, Sopó e incluso Bogotá."
+                    img="https://s0.wklcdn.com/image_191/5749668/107591233/69546102.700x525.jpg"
+               />
+          </div>
+          <h3 class="text-center font-semibold py-6 text-2xl">Dia 2</h3>
+          <div class="grid grid-cols-2 gap-4 py-6">
+               <Dias
+                    hora="7:00 a.m. – 9:00 a.m."
+                    parrafo="Levántate con el sol y disfruta del amanecer en la naturaleza.Escucha el canto de las aves y observa las diferentes especies que habitan en el embalse del Neusa. Practica yoga o meditación para conectar con tu cuerpo y mente en un ambiente tranquilo. Prepara un desayuno delicioso con ingredientes frescos y disfruta de él al aire libre."
+                    img="https://i0.wp.com/lugaresparavisitarenpareja.com/wp-content/uploads/2024/02/neusa-acampar-7.jpg?fit=590%2C435&ssl=1"
+               />
+               <Dias
+                    hora="9:00 a.m. –2:00 p.m."
+                    parrafo="Desmonta el campamento y emprende un nuevo recorrido en bicicleta de 31,42kilómetros, dura 3 horas 49 minutos con mayor desafío físico al incluir zonas con mayor desnivel, en el que se realiza la ruta del embalse de Cogua, 5% subidas pronunciadas 15% bajadas. Muy buena ruta, segura y en buenas condiciones. excelente para un buen día de bicicleta. Después podrán descansar, almorzar y prepararse para continuar con el senderismo "
+                    img="/reto5.jpg"
+               />
+               <Dias
+                    hora="2:00 p.m. –6:00 p.m."
+                    parrafo="Realiza una ruta circular, saliendo de Cogua, luego a La Plazuela, subiendo por el antiguo camino al Neusa, para llegar hasta el embalse de Neusa, el regreso a Cogua se realiza por la vereda las Margaritas, 	por una ruta que era parte de un antiguo camino hacia San 	Cayetano, paralela a la vía que va hacia este Municipio. El recorrido dura 3 horas 56 minutos y el mismo es de 24,3km."
+                    img="/reto6.jpg"
+               />
+          </div>
+     </Container>
+</Layout>
